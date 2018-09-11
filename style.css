@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eef9fa;
+}
+
+.nav {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+}
+
+.menu {
+  padding: 0 30px 0 0;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+
+.menu a {
+  text-decoration: none;
+  color: gray;
+  margin: 0 33px;
+  line-height: 70px;
+  clear: right;
+}
+
+#toggle {
+  display: none;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px
+  float right;
+}
+
+@media screen and (max-width: 580px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: green;
+  }
+  .menu a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+    width: 100%;
+    color: white;
+    background-color: #13c680;
+    text-align: center;
+    position: relative;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
+
+header {
+  background-color: #1e1e1e;
+  overflow:hidden
+}
+
+header > div {
+  width: 70%;
+  margin: 8% auto 20% auto;
+  font-family: 'Cutive Mono', monospace;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 3.2em;
+  color: #eef9fa;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: #969696;
+  width: 50%;
+  letter-spacing: 0.015em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+header a {
+  text-decoration: none;
+  font-style: italic;
+  color: #eef9fa;
+}
+
+#scrollmouse {
+    position:relative;
+    top:50%;
+    left:50%;
+}
+
+header img {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+#blogbutton {
+  background-color: green;
+  display: none;
+}
+
+#highlight {
+  background-color: #373353;
+  padding: 0 15px 0 15px;
+  line-height: 250px;
+  line-height: 75px;
+}
+
+#icons {
+  height: 300px;
+  background-color: #eef9fa;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#icons > div {
+  padding: 0 40px 0 40px;
+  display: inline-block;
+}
+
+#work {
+  height: 700px;
+  background-color: #13c680;
+  overflow: hidden;
+}
+
+#work > h2 {
+  margin-top: 100px;
+  margin-bottom: 49px;
+  color: #eef9fa;
+  font-weight: 300;
+  font-size: 3.2em;
+  font-family: 'Cutive Mono', monospace;
+  text-align: center;
+}
+
+#skills {
+  height: 400px;
+  background-color: green;
+}
+
+#blogsection {
+  height: 350px;
+  background-color: blue;
+}
+
+#contact {
+  height: 760px;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+  position: relative;
+}
+
+#contact > h2 {
+  margin-top: 200px;
+  margin-bottom: 49px;
+  color: #eef9fa;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+#contact > a {
+  margin-top: 40px;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  font-size: 0.9em;
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #969696;
+}
+
+#contact > img {
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+}
+
+#impressum {
+  position: absolute;
+  bottom: 1px;
+  margin: 0 -0 0 -33px;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #777;
+  text-decoration: none;
+  font-size: 0.7em;
+}
