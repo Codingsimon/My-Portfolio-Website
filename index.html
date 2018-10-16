@@ -15,37 +15,47 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400" rel="stylesheet">
 </head>
 <body>
-  <div class="nav">
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle"/>
+  <nav>
+    <!-- <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/> -->
+      <img src="img/logo.png" alt="Logo"></img>
       <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Über uns</a>
-        <a href="#">Work</a>
+        <a href="#about">Über</a>
+        <a href="#work">Fähigkeiten</a>
+        <a href="#contact">Kontakt</a>
       </div>
-  </div>
-  <p></p>
-  <p></p>
-    <p>Hallo</p>
-    <a href="img/social.png"></a>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
+  </nav>
 <header>
-  <div>
-    <h1 id="title"><span id="highlight">Hallo</span> </br>mein Name ist Simon Wimmer und ich bin Javaentwickler</h1>
-    <p>Dazu mache ich noch Webentwicklung, Design und Linux Zeugs. Viele Javaprojekte sind meinem <a href="https://github.com/Codingsimon">Github</a> zu finden. Wenn ich gerade nicht am Programmieren bin <a href="https://www.flickr.com/people/155344970@N03/">fotografiere</a> ich verschiedenste Motive</p>
-
-    <button type="button" id="blogbutton" name="button">Scroll down</button>
+  <div class="titeltext">
+    <h1 id="title"><span id="highlight">Hallo</span> </br>mein Name </br>ist Simon</h1>
+    <p>Ich programmiere Javaprogramme, designe Webseites und fotografiere.</p>
   </div>
-  <img src="mouse.png"></img>
+  <div class="verticallinks">
+  <a href="https://www.instagram.com/codingsimon/">Instagram</a>
+  <a href="https://www.linkedin.com/in/simon-wimmer-96032816b/">LinkedIn</a>
+  <a href="https://github.com/Codingsimon">Github</a>
+</div>
 </header>
+<div id="ueber">
+   <a name="about"></a>
+  <h2>Woran ich gerade arbeite</h2>
+  <p>Ich studiere Wirtschaftsinformatik. Arbeite daran vom Javabeginner zum Profi zu werden. Die Website soll laufend erweitert werden, dabei kann ich meine Webdev Fähigkeiten verbessern. Wenn noch Zeit bleibt mache ich Fotos für Instagram.</p>
+</div>
 <div id="work">
-  <h2>Was ich mache</h2>
-  <p>work</p></div>
-<div id="icons">
+  <a name="work"></a>
+  <h2>Meine derzeitigen Fähigkeiten</h2>
+  <div id="skillsection">
+    <div class="skilltag">Java</div><div class="progressbar"><div class="progress tagjava"></div></div>
+    <div class="skilltag">HTML</div><div class="progressbar"><div class="progress taghtml"></div></div>
+    <div class="skilltag">CSS</div><div class="progressbar"><div class="progress tagcss"></div></div>
+    <div class="skilltag">Linux</div><div class="progressbar"><div class="progress taglinux"></div></div>
+    <div class="skilltag">Photoshop</div><div class="progressbar"><div class="progress tagphotoshop"></div></div>
+    <div class="skilltag">Illustrator</div><div class="progressbar"><div class="progress tagillustrator"></div></div>
+    <div class="skilltag">Blender</div><div class="progressbar"><div class="progress tagblender"></div></div>
+  </div>
+</div>
+
+<!-- <div id="icons">
   <div>
     <img height="200px" src="img/webdev.jpg"></img><p>Webdevelopement</p>
   </div>
@@ -55,10 +65,11 @@
   <div>
     <img height="200px" src="img/linuxadmin.jpg"></img><p>Linux</p>
   </div>
-  </div>
-<div id="skills"><p>skills</p></div>
-<div id="blogsection"><p>blog</p></div>
+  </div> -->
+<!-- <div id="skills"><p>skills</p></div>
+<div id="blogsection"><p>blog</p></div> -->
 <div id="contact">
+  <a name="contact"></a>
   <h2>Folge mir auf</h2>
   <a href="https://www.instagram.com/codingsimon/">Instagram</a>
   <a href="https://www.pinterest.at/Codingsimon/">Pinterest</a>
@@ -73,5 +84,31 @@
     <a id="impressum" href="#">Impressum</a>
   </div>
 </div>
+<!-- <div class="grid">
+  <div class="tumbnail">
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid02.jpeg" alt=""></img>
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid03.jpeg" alt=""></img>
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid04.jpeg" alt=""></img>
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid05.jpeg" alt=""></img>
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid06.jpeg" alt=""></img>
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid07.jpeg" alt=""></img>
+  </div>
+  <div class="tumbnail">
+    <img src="img/grid/picturegrid08.jpeg" alt=""></img>
+  </div>
+</div> -->
+
 </body>
 </html>
