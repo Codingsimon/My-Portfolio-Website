@@ -171,6 +171,38 @@ header .verticallinks a:hover {
   display: inline-block;
 }
 
+#projects {
+  margin-top: 200px;
+  height: 800px;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+
+#projects h2 {
+  margin-top: 100px;
+  margin-bottom: 49px;
+  color: #1e1e1e;
+  font-size: 3em;
+  color: #eef9fa;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 300;
+  text-align: center;
+  overflow: hidden;
+}
+
+#projects img {
+  height: 400px;
+  width: auto;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
+#projects h3 {
+  color: #eef9fa;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 #work {
   height: 900px;
   background-color: #13c680;
