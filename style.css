@@ -1,101 +1,138 @@
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_light_webfont';
+    src: url('fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('poppins-regular-webfont.woff2') format('woff2'),
+         url('poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #eef9fa;
 }
 
-::selection {background: #373353e6; color: #ffffff;}
-::-moz-selection {background: #373353e6; color: #ffffff;}
-
-nav {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.1em;
-  height: 90px;
-  background-color: #1e1e1e;
-}
-
-.menu {
-  float: right;
-  line-height: 90px;
-  margin-right: 45px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #969696;
-  margin-left: 33px;
-  clear: right;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.menu a:hover {
+h2{
+  font-family: 'poppinssemibold', arial, sans-serif;
+  font-weight: 400;
+  font-size: 3em;
   color: #eef9fa;
 }
 
-nav img {
+::selection {background: #373353e6; color: #ffffff;}
+::-moz-selection {background: #373353e6; color: #ffffff;}
+
+/*Menu*/
+
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    background-color: #1e1e1e;
+}
+.menu {
+    padding: 0 30px 0 0;
+    background-color: #1e1e1e;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #969696;
+    margin: 0 10px;
+    line-height: 70px;
+    font-family: 'poppinsregular', arial, sans-serif;
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+.nav img {
   height: 70px;
   float: left;
   margin: 42px 0 0 13px;
 }
 
-#toggle {
-  display: none;
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+        color: #eef9fa;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB1A;
+        margin: 0;
+        background-color: #323232;
+        color: #eef9fa;
+        font-family: 'poppinsregular', arial, sans-serif;
+    }
+    .menu a:hover {
+        color: red;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    .nav img{
+      margin: 9px 0 0 -2px;
+      height: 54px;
+    }
 }
 
-label {
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  display: none;
-  width: 26px
-  float right;
-}
-
-@media screen and (max-width: 580px) {
-  label {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-    background-color: green;
-  }
-  .menu a {
-    display: inline-block;
-    border-bottom: 1px solid #eaeaeb;
-    margin: 0;
-    width: 100%;
-    color: white;
-    background-color: #13c680;
-    text-align: center;
-    position: relative;
-  }
-
-  #toggle:checked + .menu {
-    display: block;
-  }
-}
+/*Menu end*/
 
 header {
   background-color: #1e1e1e;
-  height: 1000px;
+  min-height: 80vh;
+  font-family: 'poppinsregular', arial, sans-serif;
 }
 
 header .titeltext {
-  width: 37%;
-  font-family: 'Cutive Mono', monospace;
+  width: 28%;
+  font-family: 'poppinsregular', arial, sans-serif;
   margin: auto;
 }
 
 header h1 {
+  font-family: 'poppinssemibold', arial, sans-serif;
   font-weight: 400;
-  font-size: 7.2em;
+  font-size: 3em;
   color: #eef9fa;
-  padding-top: 192px;
+  padding-top: 290px;
   margin: 0;
 }
 
@@ -104,7 +141,7 @@ header p {
   font-size: 1.4em;
   color: #969696;
   letter-spacing: 0.015em;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'poppins_light_webfont', arial, sans-serif;
   font-weight: 300;
 }
 
@@ -132,7 +169,7 @@ header .verticallinks {
   -webkit-transform: rotate(-90deg); /* Safari */
   transform: rotate(-90deg); /* Standard syntax */
   float: left;
-  margin: -166px 0 0 34px;
+  margin: 64px 0 0 34px;
 }
 
 header .verticallinks a {
@@ -181,13 +218,7 @@ header .verticallinks a:hover {
 #projects h2 {
   margin-top: 100px;
   margin-bottom: 49px;
-  color: #1e1e1e;
-  font-size: 3em;
-  color: #eef9fa;
-  font-family: 'Cutive Mono', monospace;
-  font-weight: 300;
   text-align: center;
-  overflow: hidden;
 }
 
 #projects img {
@@ -220,8 +251,8 @@ header .verticallinks a:hover {
 }
 
 #ueber {
-  background-color: #eef9fa;
-  height: 900px;
+  background-color: #7bf9ff;
+  min-height: 85vh;
   overflow: hidden;
 }
 
