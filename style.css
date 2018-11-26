@@ -28,11 +28,20 @@ body {
   background-color: #eef9fa;
 }
 
-h2{
+h2 {
   font-family: 'poppinssemibold', arial, sans-serif;
   font-weight: 400;
   font-size: 3em;
   color: #eef9fa;
+  margin: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 0.015em;
+    font-family: 'poppins_light_webfont', arial, sans-serif;
+    font-weight: 300;
 }
 
 ::selection {background: #373353e6; color: #ffffff;}
@@ -251,29 +260,26 @@ header .verticallinks a:hover {
 }
 
 #ueber {
-  background-color: #7bf9ff;
+  background-color: #399dff;
   min-height: 85vh;
-  overflow: hidden;
+  padding-top: 230px;
 }
 
 #ueber h2 {
-  margin-top: 270px;
   margin-bottom: 49px;
   color: #1e1e1e;
-  font-size: 3em;
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
 }
 
 #ueber p {
-  font-weight: 400;
-  font-size: 1.4em;
-  color: #969696;
-  letter-spacing: 0.015em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  width: 500px;
+  color: #eef9fa;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'poppinsregular', arial, sans-serif;
+  font-size: 1.2em;
+}
+
+#ueber .textbox{
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
