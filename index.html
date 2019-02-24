@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 </head>
 <body>
   <div class="nav">
@@ -20,39 +21,63 @@
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle"/>
       <div class="menu">
-          <a href="#ueber">Über</a>
-          <a href="#">Projekte</a>
-          <a href="#">Arbeit</a>
-          <a href="#">Fähigkeiten</a>
-          <a href="#">Kontakt</a>
+          <a href="#ueber">Now</a>
+          <a href="#projects">Projekte</a>
+          <a href="#contact">Kontakt</a>
       </div>
   </div>
 <header>
-  <div class="titeltext">
-    <h1 id="title">Hallo,</br>mein Name ist Simon</h1>
-    <p>Ich bin ein Java Entwickler und Webdesigner</p>
-  </div>
   <div class="verticallinks">
   <a href="https://www.instagram.com/codingsimon/">Instagram</a>
   <a href="https://www.linkedin.com/in/simon-wimmer-96032816b/">LinkedIn</a>
   <a href="https://github.com/Codingsimon">Github</a>
 </div>
+  <div class="titeltext">
+    <h1 id="title">Hallo,</br>mein Name </br>ist Simon</h1>
+    <p>Ich bin ein Java Entwickler und Webdesigner</p>
+  </div>
+  <p id="downarrowcenter"><a id="downarrow" href="#ueber">&#8595;</a></p>
 </header>
 <a name="ueber"></a>
-<div id="ueber">
+<div class="ueber">
   <div class="textbox">
   <h2>Woran ich gerade arbeite</h2>
-    <p>&#62; Meine Java Fähigkeiten verbessern.</p>
-    <p>&#62; Eine Retro-Spielesammlung mit vier auf Java basierenden Spiele erstellen</p>
-    <p>&#62; Diese Website erweitern um neue Techniken im Webdesign kennen zu lernen</p>
+  <p id="nowsubtitle">- inspiriert bei <a href="https://nownownow.com/about">Derek Sivers</a></p>
+    <p>&#62; Meine Java Fähigkeiten verbessern.</br>
+    &#62; Eine Retro-Spielesammlung mit vier auf Java basierenden Spielen erstellen</br>
+    &#62; Diese Website erweitern um in der Webentwicklung besser zu werden</p>
   </div>
 </div>
 <div id="projects">
+  <a name="projects"></a>
     <h2>Projekte</h2>
-    <img src="img/pong.png" alt="">
-    <h3>Pong</h3>
+    <div class="projectcat">
+      <div class="projectboxleft">
+        <img src="img/pong.png" alt="">
+      </div>
+      <div class="projectboxright">
+        <h3>Pong in Java</h3>
+        <p>Ein in Jave entwickeltes Retrogame in der Anlehnung an Pong</p>
+      <div class="button">
+        <a href="#">Zum Projekt</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="projectcat">
+      <div class="projectboxright">
+        <img src="img/pong.png" alt="">
+      </div>
+      <div class="projectboxleft">
+        <h3>Pong in Java</h3>
+        <p>Ein in Jave entwickeltes Retrogame in der Anlehnung an Pong</p>
+        <div class="button">
+          <a href="#">Zum Projekt</a>
+        </div>
+      </div>
+    </div>
 </div>
-<div id="work">
+<!-- <div id="work">
   <a name="work"></a>
   <h2>Fähigkeiten Verteilung</h2>
   <div id="skillsection">
@@ -63,7 +88,7 @@
     <div class="skilltag">Illustrator</div><div class="progressbar"><div class="progress tagillustrator"></div></div>
     <div class="skilltag">Blender</div><div class="progressbar"><div class="progress tagblender"></div></div>
   </div>
-</div>
+</div> -->
 
 <div id="contact">
   <a name="contact"></a>

@@ -22,6 +22,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'poppinssextrabold';
+    src: url('fonts/poppins-extrabold-webfont.ttf') format('woff2'),
+         url('fonts/poppins-extrabold-webfont.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +37,7 @@ body {
 }
 
 h2 {
-  font-family: 'poppinssemibold', arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 3em;
   color: #eef9fa;
@@ -40,8 +48,8 @@ p {
     font-weight: 400;
     font-size: 1.4em;
     letter-spacing: 0.015em;
-    font-family: 'poppins_light_webfont', arial, sans-serif;
-    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 ::selection {background: #373353e6; color: #ffffff;}
@@ -66,7 +74,15 @@ p {
     color: #969696;
     margin: 0 10px;
     line-height: 70px;
-    font-family: 'poppinsregular', arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.menu a:hover {
+  letter-spacing: 0.1em;
+  color: #eef9fa;
 }
 
 span {
@@ -91,7 +107,7 @@ label {
   margin: 42px 0 0 13px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-device-width: 1080px) {
     label {
         display: block;
         cursor: pointer;
@@ -130,19 +146,43 @@ header {
   font-family: 'poppinsregular', arial, sans-serif;
 }
 
-header .titeltext {
-  width: 28%;
-  font-family: 'poppinsregular', arial, sans-serif;
-  margin: auto;
+@media only screen and (min-device-width: 1080px) {
+  header .titeltext {
+    width: 361px;
+    font-family: 'poppinsregular', arial, sans-serif;
+    margin: auto;
+  }
 }
 
+@media only screen and (max-device-width: 1080px) {
+  header .titeltext {
+    width: 19%;
+    font-family: 'poppinsregular', arial, sans-serif;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 1080px) {
 header h1 {
-  font-family: 'poppinssemibold', arial, sans-serif;
-  font-weight: 400;
-  font-size: 3em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+  font-weight: 700;
   color: #eef9fa;
-  padding-top: 290px;
+  padding-top: 190px;
   margin: 0;
+  line-height: 1.2em;
+}
+}
+
+@media only screen and (max-device-width: 1080px) {
+  header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    color: #eef9fa;
+    padding-top: 80px;
+    margin: 0;
+  }
 }
 
 header p {
@@ -150,14 +190,24 @@ header p {
   font-size: 1.4em;
   color: #969696;
   letter-spacing: 0.015em;
-  font-family: 'poppins_light_webfont', arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  margin-top: 0.5em;
+  padding-bottom: 20px;
 }
 
-#scrollmouse {
-    position:relative;
-    top:50%;
-    left:50%;
+#downarrow{
+  margin: 0px;
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #969696;
+}
+
+#downarrowcenter {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 179px;
 }
 
 header img {
@@ -178,7 +228,8 @@ header .verticallinks {
   -webkit-transform: rotate(-90deg); /* Safari */
   transform: rotate(-90deg); /* Standard syntax */
   float: left;
-  margin: 64px 0 0 34px;
+  margin-top: 500px;
+  margin-left: -58px;
 }
 
 header .verticallinks a {
@@ -186,11 +237,11 @@ header .verticallinks a {
   font-size: 1.3em;
   text-decoration: none;
   padding-right: 30px;
-  color: #eef9fa;
+  color: #969696;
 }
 
 header .verticallinks a:hover {
-  color: #969696;
+  color: #eef9fa;
 }
 
 #blogbutton {
@@ -218,16 +269,18 @@ header .verticallinks a:hover {
 }
 
 #projects {
-  margin-top: 200px;
-  height: 800px;
-  background-color: #1e1e1e;
+  background-color: #eef9fa;
   overflow: hidden;
+  padding-bottom: 95px;
 }
 
 #projects h2 {
-  margin-top: 100px;
-  margin-bottom: 49px;
-  text-align: center;
+margin-bottom: 0.7em;
+color: #1e1e1e;
+font-weight: 700;
+font-size: 3.2em;
+padding-left: 20.5%;
+padding-top: 95px;
 }
 
 #projects img {
@@ -238,9 +291,127 @@ header .verticallinks a:hover {
 }
 
 #projects h3 {
-  color: #eef9fa;
+  color: #1e1e1e;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6em;
+  margin-top: -9px;
+}
+
+#projects .projectboxright h3 {
+    padding-left: 30px;
+}
+
+#projects p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin-top: -23px;
+}
+
+#projects .projectboxright p {
+    padding-left: 30px;
+}
+
+
+@media only screen and (min-device-width: 1150px) {
+  .projectcat{
+    border-width: 7px;
+    border-color: #d4fbff;
+    border-style: solid;
+    width: 1049px;
+    height: 400px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+.projectboxright{
+  float: right;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.projectboxleft{
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.button{
+  background-color: #3167ff;
+  width: 200px;
+  padding: 13px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 7px;
+  bottom: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media only screen and (max-device-width: 1149px) {
+  .projectcat{
+    border-width: 7px;
+    border-color: #d4fbff;
+    border-style: solid;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    background-color: #3167ff;
+    width: 200px;
+    padding: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 7px;
+    bottom: 0px;
+    position: relative;
+  }
+
+  #projects h3 {
+    margin-top: 41px;
+    text-align: center;
+  }
+
+  #projects p {
+    text-align: center;
+  }
+
+  .projectboxright{
+    float: none;
+  }
+
+  .projectboxleft{
+    float: none;
+  }
+}
+
+.button:hover{
+  background-color: #31eaff;
+  color: #1e1e1e;
+}
+
+.button a{
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  color: #eef9fa;
+  font-weight: 300;
+  letter-spacing: 0.07em;
+  #3167ff
 }
 
 #work {
@@ -259,29 +430,47 @@ header .verticallinks a:hover {
   text-align: center;
 }
 
-#ueber {
-  background-color: #399dff;
-  min-height: 85vh;
+.ueber {
+  background-color: #31eaff;
+  min-height: 65vh;
   padding-top: 230px;
 }
 
-#ueber h2 {
-  margin-bottom: 49px;
-  color: #1e1e1e;
+.ueber h2 {
+  margin-bottom: -0.3em;
+  color: #eef9fa;
+  font-weight: 700;
+  font-size: 3.2em;
 }
 
-#ueber p {
+.ueber p {
   color: #eef9fa;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'poppinsregular', arial, sans-serif;
-  font-size: 1.2em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 0.6;
+  line-height: 1.7;
 }
 
-#ueber .textbox{
-  width: 50%;
+.ueber .textbox{
+  width: 42%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ueber #nowsubtitle{
+  font-size: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  margin-top: 1.3em;
+}
+
+.ueber #nowsubtitle a {
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Oswald', sans-serif;
 }
 
 #skills {
@@ -299,16 +488,15 @@ header .verticallinks a:hover {
   background-color: #1e1e1e;
   overflow: hidden;
   text-align: center;
-  font-family: 'Cutive Mono', monospace;
   position: relative;
 }
 
 #contact > h2 {
   margin-top: 200px;
-  margin-bottom: 49px;
   color: #eef9fa;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 2.4em;
+  margin-bottom: 43px;
 }
 
 #contact > a {
@@ -317,8 +505,8 @@ header .verticallinks a:hover {
   margin: 0 5px 0 5px;
   font-size: 1.2em;
   font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
   color: #969696;
+  font-family: 'Oswald', sans-serif;
 }
 
 #contact > img {
@@ -338,6 +526,7 @@ header .verticallinks a:hover {
   color: #777;
   text-decoration: none;
   font-size: 0.7em;
+  font-family: 'Oswald', sans-serif;
 }
 
 #skillsection {
