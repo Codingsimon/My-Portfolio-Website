@@ -11,76 +11,95 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 </head>
+
+
+
 <body>
-  <div class="nav">
-      <img src="img/logo.png" alt="">
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
-      <div class="menu">
-          <a href="#ueber">Now</a>
-          <a href="#projects">Projekte</a>
-          <a href="#contact">Kontakt</a>
+  <div class="contanier">
+  <header>
+      <nav>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="menu">
+          <ul class="hide-mobil">
+            <li><a href="#ueber">Now</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- <div class="verticallinks">
+        <a href="https://www.instagram.com/codingsimon/">Instagram</a>
+        <a href="https://www.linkedin.com/in/simon-wimmer-96032816b/">LinkedIn</a>
+        <a href="https://github.com/Codingsimon">Github</a>
+      </div> -->
+      <div class="titeltext">
+
+        <div class="line"></div>
+        <div class="circle">
+          <div class="circle-content">
+              <h1>Hallo,</br>mein Name </br>ist Simon</h1>
+          </div>
+        </div>
+
+
+
+        <p>Ich bin ein Java Entwickler und Webdesigner</p>
       </div>
+      <p id="downarrowcenter"><a id="downarrow" href="#ueber">&#8595;</a></p>
+
+
+  </header>
   </div>
-<header>
-  <div class="verticallinks">
-  <a href="https://www.instagram.com/codingsimon/">Instagram</a>
-  <a href="https://www.linkedin.com/in/simon-wimmer-96032816b/">LinkedIn</a>
-  <a href="https://github.com/Codingsimon">Github</a>
-</div>
-  <div class="titeltext">
-    <h1 id="title">Hallo,</br>mein Name </br>ist Simon</h1>
-    <p>Ich bin ein Java Entwickler und Webdesigner</p>
-  </div>
-  <p id="downarrowcenter"><a id="downarrow" href="#ueber">&#8595;</a></p>
-</header>
-<a name="ueber"></a>
-<div class="ueber">
-  <div class="textbox">
-  <h2>Woran ich gerade arbeite</h2>
-  <p id="nowsubtitle">- inspiriert bei <a href="https://nownownow.com/about">Derek Sivers</a></p>
-    <p>&#62; Meine Java Fähigkeiten verbessern.</br>
-    &#62; Eine Retro-Spielesammlung mit vier auf Java basierenden Spielen erstellen</br>
-    &#62; Diese Website erweitern um in der Webentwicklung besser zu werden</p>
-  </div>
-</div>
-<div id="projects">
-  <a name="projects"></a>
-    <h2>Projekte</h2>
-    <div class="projectcat">
-      <div class="projectboxleft">
-        <img src="img/pong.png" alt="">
-      </div>
-      <div class="projectboxright">
-        <h3>Pong in Java</h3>
-        <p>Ein in Jave entwickeltes Retrogame in der Anlehnung an Pong</p>
-      <div class="button">
-        <a href="#">Zum Projekt</a>
-      </div>
+
+
+
+  <a name="ueber"></a>
+  <div class="ueber">
+    <div class="container">
+      <h2>Woran ich gerade arbeite</h2>
+      <p id="nowsubtitle">- inspiriert bei <a href="https://nownownow.com/about">Derek Sivers</a></p>
+      <p>&#62; Meine Java Fähigkeiten verbessern.</br>
+        &#62; Eine Retro-Spielesammlung mit vier auf Java basierenden Spielen erstellen</br>
+        &#62; Diese Website erweitern um in der Webentwicklung besser zu werden</p>
       </div>
     </div>
-
-    <div class="projectcat">
-      <div class="projectboxright">
-        <img src="img/pong.png" alt="">
+    <div id="projects">
+      <a name="projects"></a>
+      <h2>Projekte</h2>
+      <div class="container">
+        <div class="projectboxleft">
+          <img src="img/pong.png" alt="">
+        </div>
+        <div class="projectboxright">
+          <h3>Pong in Java</h3>
+          <p>Ein in Jave entwickeltes Retrogame in der Anlehnung an Pong</p>
+          <div class="button">
+            <a href="#">Zum Projekt</a>
+          </div>
+        </div>
       </div>
-      <div class="projectboxleft">
-        <h3>Pong in Java</h3>
-        <p>Ein in Jave entwickeltes Retrogame in der Anlehnung an Pong</p>
-        <div class="button">
-          <a href="#">Zum Projekt</a>
+
+      <div class="contanier">
+        <div class="container">
+          <img src="img/pong.png" alt="">
+        </div>
+        <div class="projectboxleft">
+          <h3>Pong in Java</h3>
+          <p>Ein in Jave entwickeltes Retrogame in der Anlehnung an Pong</p>
+          <div class="button">
+            <a href="#">Zum Projekt</a>
+          </div>
         </div>
       </div>
     </div>
-</div>
-<!-- <div id="work">
-  <a name="work"></a>
-  <h2>Fähigkeiten Verteilung</h2>
-  <div id="skillsection">
+    <!-- <div id="work">
+    <a name="work"></a>
+    <h2>Fähigkeiten Verteilung</h2>
+    <div id="skillsection">
     <div class="skilltag">Java</div><div class="progressbar"><div class="progress tagjava"></div></div>
     <div class="skilltag">HTML</div><div class="progressbar"><div class="progress taghtml"></div></div>
     <div class="skilltag">CSS</div><div class="progressbar"><div class="progress tagcss"></div></div>
