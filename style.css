@@ -11,14 +11,21 @@ body {
 h1{
   color: #eef9fa;
   font-family: 'Barlow', sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   text-align: center;
+  font-size: 1.5em;
+  margin-top: 35px;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 3em;
+  font-weight: 700;
+  font-size: 1.1em;
   color: #eef9fa;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
 }
 
 p {
@@ -26,6 +33,12 @@ p {
     font-size: 1em;
     letter-spacing: 0.015em;
     font-weight: 400;
+    color: #303030;
+}
+
+a{
+  color: #67b8de;
+  text-decoration: none;
 }
 
 ul{
@@ -36,13 +49,14 @@ ul{
 
 .container{
   text-align: center;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 15px 0px 15px;
 }
 
 header{
+  background-color: green;
   background-image: url("img/header_bg.jpeg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 300% auto;
 }
 
 .logo{
@@ -62,26 +76,98 @@ nav{
   background-color: green;
 }
 
-.titeltext{
-    margin: 0 auto;
-}
-
 .circle{
-  position: absolute;
   background-color: #000000d9;
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  margin: 0 auto 0 auto;
+  right: 0;
+  left: 0;
 }
 
 .circle-content{
     padding-top: 18%;
 }
 
-.line{
+.purple-container{
+  background-color: #34344b;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+
+.headingbox{
+  color: #eef9fa;
+  margin-bottom: 30px;
+}
+
+.headingbox p{
+  color: #eef9fa;
+  margin: 0;
+}
+
+#downarrowcenter{
+  margin: 0;
+}
+
+hr{
+  height: 1px;
+  border: 0;
+  background-color: #efefef; /* Modern Browsers */
+
+}
+
+.listicon{
+  padding-right: 10px;
+  color: #bdbdbd;
+}
+
+.notepad{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eef9fa;
+  background-color: #eef9fa;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #303030;
+}
+
+.task-icon{
+  background-color: #b7e1e1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.white-container{
+  text-align: center;
+}
+
+.white-contanier h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .line{
   position: absolute;
   border-color: yellow;
-  height: 520px;
-  width: 30px;
-  background-color: green;
+  height: 400px;
+  width: 0px;
+  border-width: 5px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  border-style: solid;
 }
+
+.vert1{
+  transform: rotate(45deg);
+}
+
+.vert2{
+  transform: rotate(-45deg);
+} */
