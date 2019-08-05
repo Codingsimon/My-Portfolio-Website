@@ -8,6 +8,11 @@ body {
   background-color: #eef9fa;
 }
 
+canvas{
+  position: absolute;
+  z-index: -4;
+}
+
 h1{
   color: #eef9fa;
   font-family: 'Barlow', sans-serif;
@@ -58,10 +63,8 @@ ul{
 }
 
 header{
-  background-color: #69667e;
   background-repeat: no-repeat;
   background-size: 300% auto;
-  padding-bottom: 30px;
 }
 
 header h2 {
@@ -75,11 +78,10 @@ header h2 {
   margin-top: 5px;
 }
 
-.hamstripe{
-  width: 40px;
-  height: 3px;
-  background-color: green;
-  margin: 10px 0;
+.ham{
+  font-size: 2em;
+  color: #eef9fa;
+  margin-top: 5px;
 }
 
 nav{
@@ -92,7 +94,7 @@ nav{
 }
 
 .exit-btn{
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .menu{
@@ -151,13 +153,13 @@ nav{
 
 #downarrowcenter{
   margin: 0;
+  padding-bottom: 30px;
 }
 
 hr{
   height: 1px;
   border: 0;
   background-color: #efefef; /* Modern Browsers */
-
 }
 
 .listicon{
@@ -278,4 +280,50 @@ footer img{
   footer img{
     margin-bottom: 100px;
   }
+
+  .show-desktop{
+    display: block;
+  }
+
+  .hide-desktop{
+    display: none;
+  }
+
+  .menu{
+    background-color: transparent;
+    text-align: left;
+    position: inherit;
+    width: auto;
+  }
+
+  nav ul li{
+    float: left;
+  }
+
+.menu ul li a {
+    padding-right: 24px;
+    background-color: transparent;
+    width: auto;
+    padding-top: 5px;
+    color: #eef9fa;
+  }
+
+.menu ul li a:hover {
+  color: #67b8de;
+  background-color: transparent;
+}
+
+  nav{
+    padding-top: 23px;
+  }
+
+  header .container {
+    margin: 0 auto;
+    margin: 0px 125px;
+  }
+
+  #exit{
+    display: none;
+  }
+
 }

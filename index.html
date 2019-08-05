@@ -4,49 +4,58 @@
   <title>Codingsimon</title>
   <meta name="keywords" content="Programmieren, Java, Webentwicklung, Coding, Codingsimon">
   <meta name="description" content="Eine Webseite über Programmieren">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta name="author" content="Coding Simon">
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="2 month">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 </head>
 
 
 
 <body>
-  <header>
+  <header id="showroom">
+    <canvas>
+      </canvas>
     <div class="container">
       <nav>
         <img src="img/logo.png" alt="Logo" class="logo">
-        <div class="menu">
-          <a href="#">&#9776;</a>
-          <ul class="hide-mobi">
-            <li><a class="exit-btn" href="#">&#10005;</a></li>
-            <li><a href="#ueber">Now</a></li>
-            <li><a href="#projects">Projekte</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+        <a class="hide-desktop ham" id="menuicon" href="#">&#9776;</a>
+        <div class="menu hide-mobil show-desktop" id="list">
+          <ul>
+            <li id="exit" ><a class="exit-btn" href="#">&#10005;</a></li>
+            <li><a href="#now">Now</a></li>
+            <li><a href="#skill">Fähigkeiten</a></li>
+            <li><a href="#social">Social</a></li>
           </ul>
         </div>
       </nav>
 
-      <!-- <div class="verticallinks">
-      <a href="https://www.instagram.com/codingsimon/">Instagram</a>
-      <a href="https://www.linkedin.com/in/simon-wimmer-96032816b/">LinkedIn</a>
-      <a href="https://github.com/Codingsimon">Github</a>
-    </div> -->
+    <script type="text/javascript">
+      var menu = document.getElementById('menuicon');
+      var nav = document.getElementById('list');
+      var exit = document.getElementById('exit');
 
-    <!-- <div class="line vert1"></div>
-    <div class="line vert2"></div> -->
+      menu.addEventListener('click', function(e){
+        nav.classList.toggle('hide-mobil');
+        e.preventDefault();
+      });
+
+      exit.addEventListener('click', function(e){
+        nav.classList.add('hide-mobil');
+        e.preventDefault();
+      });
+    </script>
+
+
     <div class="circle">
       <div class="circle-content">
         <h1>Ich bin </br>Java Entwickler & Webdesigner</h1>
       </div>
     </div>
 
-    <h2>Ich heiße Simon und programmiere Javapanwendungen, erstelle 3D Art und designe Websites</h2>
+    <h2>Ich heiße Simon und programmiere Javaanwendungen, erstelle 3D Art und designe Websites</h2>
     <p id="downarrowcenter"><a id="downarrow" href="#ueber">&#8595;</a></p>
   </div>
 </header>
@@ -54,7 +63,7 @@
 
 
 
-<!-- <a name="ueber"></a> -->
+<a name="now"></a>
 <div class="purple-container">
   <div class="container">
     <div class="headingbox">
@@ -65,33 +74,33 @@
       <p><span class="listicon">&#9675;</span>Meine Java Fähigkeiten verbessern.</p>
       <hr>
       <p><span class="listicon">&#9675;</span>Eine Retro-Spielesammlung mit vier auf Java basierenden Spielen erstellen</p>
-      <hr>
-      <p><span class="listicon">&#9675;</span>Diese Website erweitern um in der Webentwicklung besser zu werden</p>
     </div>
   </div>
 </div>
 
+<a name="skill"></a>
 <div class="white-container">
   <h3>Was ich mache</h3>
   <div class="skillbox">
     <div class="container">
       <div class="task-icon"></div>
       <h4>Java</h4>
-      <p>Ich bin dabei Java zu lernen und währendessen Spiele und kleine Anwenungen zu erstellen</p>
+      <p>Ich lerne gerade Java und versuche meine Programmierfähigkeiten zu verbessern. Dazu erstelle ich Spiele und kleine Anwenungen</p>
     </div>
     <div class="container">
       <div class="task-icon"></div>
       <h4>Webdesign</h4>
-      <p>Ich entwickle Websites und webbasierte anwendungen mit einem großen Augenmerk auf das grafische Erscheinungsbild und Funktion</p>
+      <p>Ich entwickle Websites und webbasierte Anwendungen mit einem großen Augenmerk auf das grafische Erscheinungsbild und Funktion</p>
     </div>
     <div class="container">
-      <div class="task-icon"></div>
+      <a href="https://www.artstation.com/weaseleffectsblog"><div class="task-icon"></div></a>
       <h4>3D</h4>
-      <p>Das entwickeln von 3D Szenen ist meine Leidenschaft. Ich erstelle 3D Kunstwerke und Animationen</p>
+      <p>Fasziniert von der erstellung virtueller Welten. Ich verwende Blender um 3D Modelle zu erstellen. Meine Werke sind Landschaften, Charaktere und Animationen</p>
     </div>
   </div>
 </div>
 
+<a name="social"></a>
 <footer>
   <div class="container">
     <a name="contact"></a>
@@ -113,5 +122,6 @@
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
