@@ -1,3 +1,4 @@
-# My-Portfolio-Website
+# Personal Coding Portfolio
+My old personal portfolio website.
 
 ![Image](portfolio.gif)
